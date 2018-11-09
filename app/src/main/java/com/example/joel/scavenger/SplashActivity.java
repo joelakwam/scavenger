@@ -10,7 +10,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class SplasActivity extends Activity {
+public class SplashActivity extends Activity {
 
     @BindView(R.id.appTitle) TextView appTitle;
 
@@ -30,7 +30,7 @@ public class SplasActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplasActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
