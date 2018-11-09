@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String location = searchField.getText().toString();
 
-//                if(location.isEmpty()){
-//                    Toast.makeText(MainActivity.this, "Please enter location", Toast.LENGTH_LONG).show();
-//                }else{
+                if(location.isEmpty()){
+                    Toast.makeText(MainActivity.this, "Please enter location", Toast.LENGTH_LONG).show();
+                }else{
 //                    Intent intent = new Intent(MainActivity.this, EventsActivity.class);
 //                    intent.putExtra("location", location);
 //                    startActivity(intent);
