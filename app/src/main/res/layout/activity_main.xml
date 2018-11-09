@@ -14,14 +14,14 @@
         android:layout_marginTop="100dp"
         android:hint="Enter location"/>
 
-    <!--<Button-->
-        <!--android:layout_width="100dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:text="Search"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="170dp"-->
-        <!--android:textSize="18sp"-->
-        <!--android:textColor="@color/White"-->
-        <!--android:background="@color/colorBlue"/>-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:textSize="18sp"
+        android:textColor="@color/White"
+        android:background="@color/colorBlue"/>
 
 </RelativeLayout>
