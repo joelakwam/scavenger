@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(location.isEmpty()){
                     Toast.makeText(MainActivity.this, "Please enter location", Toast.LENGTH_LONG).show();
-                }else{ Intent intent = new Intent(MainActivity.this, EventsActivity.class);
-                   intent.putExtra("location", location);
+                }else{
+                    Intent intent = new Intent(MainActivity.this, EventsActivity.class);
+                    intent.putExtra("location", location);
                     startActivity(intent);
                 }
             }
