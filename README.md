@@ -17,4 +17,4 @@ This is a simple Android application that enables users to search for events by 
 # License
 MIT Copyright (c) 2018
 
-*A project by **Joel Akwam** *
+A project by **Joel Akwam**
