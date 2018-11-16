@@ -18,4 +18,32 @@ public class Event{
         this.status = status;
         this.currency = currency;
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public String getUrl(){
+        return url;
+    }
+
+    public String getStartTime(){
+        return startTime;
+    }
+
+    public String getEndTime(){
+        return endTime;
+    }
+
+    public String getStatus(){
+        return status;
+    }
+
+    public String getCurrency(){
+        return currency;
+    }
 }
