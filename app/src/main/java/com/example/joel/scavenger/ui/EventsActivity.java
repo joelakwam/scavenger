@@ -40,13 +40,15 @@ public class EventsActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onResponse(Call call, Response response){
-                try{
-                    String jsonData = response.body().string();
-                    Log.v(TAG, jsonData);
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
+            public void onResponse(Call call, Response response) throws IOException{
+                events = eventService.processResults(response);
+
+                EventsActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                    }
+                });
             }
         });
     }
