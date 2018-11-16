@@ -1,4 +1,4 @@
-package com.example.joel.scavenger;
+package com.example.joel.scavenger.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
+
+import com.example.joel.scavenger.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

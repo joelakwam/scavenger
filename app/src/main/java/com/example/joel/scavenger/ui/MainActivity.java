@@ -1,4 +1,4 @@
-package com.example.joel.scavenger;
+package com.example.joel.scavenger.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.joel.scavenger.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(location.isEmpty()){
                     Toast.makeText(MainActivity.this, "Please enter location", Toast.LENGTH_LONG).show();
-                }else{ Intent intent = new Intent(MainActivity.this, EventsActivity.class);
-                   intent.putExtra("location", location);
+                }else{
+                    Intent intent = new Intent(MainActivity.this, EventsActivity.class);
+                    intent.putExtra("location", location);
                     startActivity(intent);
                 }
             }
