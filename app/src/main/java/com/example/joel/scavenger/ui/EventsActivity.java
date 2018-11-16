@@ -62,11 +62,6 @@ public class EventsActivity extends AppCompatActivity {
 
                         ArrayAdapter adapter = new ArrayAdapter(EventsActivity.this, android.R.layout.simple_list_item_1, eventNames);
                         mListView.setAdapter(adapter);
-
-                        for(Event event : events){
-                            Log.d(TAG, "description: " + event.getDescription());
-                            Log.d(TAG, "url: " + event.getUrl());
-                        }
                     }
                 });
             }
