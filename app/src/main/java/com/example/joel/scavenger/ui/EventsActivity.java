@@ -1,9 +1,12 @@
-package com.example.joel.scavenger;
+package com.example.joel.scavenger.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.joel.scavenger.services.EventService;
+import com.example.joel.scavenger.R;
 
 import java.io.IOException;
 
