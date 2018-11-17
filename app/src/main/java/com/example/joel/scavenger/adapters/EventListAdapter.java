@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.joel.scavenger.R;
 import com.example.joel.scavenger.models.Event;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -60,6 +61,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
         }
 
         public void bindEvent(Event event){
+            Picasso.with(context).load(event.getLogoUrl()).into(eventImageView);
             eventNameTextView.setText(event.getName());
             statusTextView.setText(event.getStatus());
             startTimeTextView.setText("Start: " + event.getStartTime());
