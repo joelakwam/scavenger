@@ -6,6 +6,13 @@
     android:layout_margin="30dp"
     tools:context=".ui.SignupActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
     <EditText
         android:id="@+id/searchField"
         android:layout_width="fill_parent"
@@ -24,9 +31,9 @@
         android:layout_marginTop="160dp" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/signUpButton"
         android:layout_width="355dp"
-        android:text="Login"
+        android:text="Sign Up"
         android:layout_height="64dp"
         android:layout_marginTop="220dp" />
 
