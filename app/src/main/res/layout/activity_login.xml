@@ -30,11 +30,11 @@
         android:inputType="textPassword"
         android:layout_marginTop="160dp" />
 
-    <!--<Button-->
-        <!--android:id="@+id/loginButton"-->
-        <!--android:layout_width="355dp"-->
-        <!--android:text="LOGIN"-->
-        <!--android:layout_height="64dp"-->
-        <!--android:layout_marginTop="220dp" />-->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="355dp"
+        android:text="LOGIN"
+        android:layout_height="64dp"
+        android:layout_marginTop="220dp" />
 
 </RelativeLayout>
