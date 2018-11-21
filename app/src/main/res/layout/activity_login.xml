@@ -7,6 +7,7 @@
     android:layout_margin="30dp">
 
     <TextView
+        android:id="@+id/loginHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
