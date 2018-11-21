@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.SignupActivity" />
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.LoginActivity"/>
+        </activity>
         <activity android:name=".ui.EventsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
