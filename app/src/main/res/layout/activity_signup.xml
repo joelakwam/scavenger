@@ -38,6 +38,7 @@
         android:layout_marginTop="220dp" />
 
     <TextView
+        android:id="@+id/toLoginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Login here."
