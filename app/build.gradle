@@ -10,7 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    
+
     buildTypes.each{
         it.buildConfigField 'String', 'ACCESS_TOKEN', AccessToken
     }
@@ -46,6 +46,7 @@ dependencies {
     implementation 'com.jakewharton:butterknife:9.0.0-rc1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
     implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation "com.google.firebase:firebase-auth:9.0.2"
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
