@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:id="@+id/loginHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_border_bottom"
+        android:layout_marginTop="100dp"
+        android:hint="Email address"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:hint="Password"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_border_bottom"
+        android:inputType="textPassword"
+        android:layout_marginTop="160dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="355dp"
+        android:text="LOGIN"
+        android:textColor="@color/White"
+        android:background="@color/Blue"
+        android:layout_height="64dp"
+        android:layout_marginTop="220dp" />
+
+    <TextView
+        android:id="@+id/toRegisterLink"
+        android:layout_marginTop="320dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an a account? Sign up here"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.example.joel.scavenger.adapters.EventListAdapter;
 import com.example.joel.scavenger.models.Event;
@@ -51,6 +53,7 @@ public class EventsActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException{
+
                 events = eventService.processResults(response);
 
                 EventsActivity.this.runOnUiThread(new Runnable() {
