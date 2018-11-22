@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.joel.scavenger.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +22,8 @@ public class LoginActivity extends AppCompatActivity{
     @BindView(R.id.emailField) EditText inputEmail;
     @BindView(R.id.password) EditText inputPassword;
     @BindView(R.id.loginHeading) TextView loginHeading;
+
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
