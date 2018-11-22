@@ -9,8 +9,9 @@ public class Event{
     private String timeZone;
     private String status;
     private String currency;
+    private String logoUrl;
 
-    public Event(String name, String description, String url, String startTime, String endTime, String timeZone,String status, String currency){
+    public Event(String name, String description, String url, String startTime, String endTime, String timeZone,String status, String currency, String logoUrl){
         this.name = name;
         this.description = description;
         this.url = url;
@@ -19,6 +20,7 @@ public class Event{
         this.timeZone = timeZone;
         this.status = status;
         this.currency = currency;
+        this.logoUrl = logoUrl;
     }
 
     public String getName(){
@@ -51,5 +53,9 @@ public class Event{
 
     public String getCurrency(){
         return currency;
+    }
+
+    public String getLogoUrl(){
+        return logoUrl;
     }
 }

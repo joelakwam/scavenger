@@ -60,8 +60,9 @@ public class EventService{
                 String timeZone = event.getJSONObject("start").getString("timezone");
                 String status = event.getString("status");
                 String currency = event.getString("currency");
+                String logoUrl = event.getJSONObject("logo").getString("url");
 
-                Event events = new Event(name, description, url, startTime, endTime, timeZone, status, currency);
+                Event events = new Event(name, description, url, startTime, endTime, timeZone, status, currency, logoUrl);
                 eventArrayList.add(events);
             }
         }catch(IOException e){
