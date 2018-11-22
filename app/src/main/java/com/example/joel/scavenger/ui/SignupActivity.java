@@ -33,6 +33,7 @@ public class SignupActivity extends AppCompatActivity {
 
         Typeface varelaRound = Typeface.createFromAsset(getAssets(), "fonts/VarelaRound-Regular.ttf");
         registerHeading.setTypeface(varelaRound);
+        toLoginLink.setTypeface(varelaRound);
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +45,8 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this, "Please enter email", Toast.LENGTH_LONG).show();
                 }else if(password.isEmpty()){
                     Toast.makeText(SignupActivity.this, "Please enter password", Toast.LENGTH_LONG).show();
+                }else if(password.length() < 6){
+                    Toast.makeText(SignupActivity.this, "Password too short, enter minimum 6 characters", Toast.LENGTH_LONG).show();
                 }else {
                     Intent intent = new Intent(SignupActivity.this, MainActivity.class);
                     startActivity(intent);

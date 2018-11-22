@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity{
 
         Typeface varelaRound = Typeface.createFromAsset(getAssets(), "fonts/VarelaRound-Regular.ttf");
         loginHeading.setTypeface(varelaRound);
+        toRegisterLink.setTypeface(varelaRound);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
