@@ -72,11 +72,10 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this, "Please enter password", Toast.LENGTH_LONG).show();
                 } else if (password.length() < 6) {
                     Toast.makeText(SignupActivity.this, "Password too short, enter minimum 6 characters", Toast.LENGTH_LONG).show();
-                }
-//                else {
-//
-//                    //Making progress bar visible
-//                    progressBar.setVisibility(View.VISIBLE);
+                } else {
+
+                    //Making progress bar visible
+                    progressBar.setVisibility(View.VISIBLE);
 //
 //                    //For creating a new user
 //                    auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
