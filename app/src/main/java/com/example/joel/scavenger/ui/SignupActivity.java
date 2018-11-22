@@ -76,9 +76,9 @@ public class SignupActivity extends AppCompatActivity {
 
                     //Making progress bar visible
                     progressBar.setVisibility(View.VISIBLE);
-//
-//                    //For creating a new user
-//                    auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
+
+                    //For creating a new user
+                    auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
 //                        @Override
 //                        public void onComplete(Task<AuthResult> task) {
 //                            if (!task.isSuccessful()) {
