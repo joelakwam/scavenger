@@ -14,6 +14,8 @@ public class Event{
     private String currency;
     private String logoUrl;
 
+    public Event(){}
+
     public Event(String name, String description, String url, String startTime, String endTime, String timeZone,String status, String currency, String logoUrl){
         this.name = name;
         this.description = description;
