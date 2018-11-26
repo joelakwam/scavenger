@@ -27,7 +27,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Event Name"
                 android:id="@+id/eventNameTextView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -39,7 +38,6 @@
                 android:id="@+id/websiteUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="url"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/eventNameTextView"
                 android:textColor="@color/Blue"
@@ -58,9 +56,7 @@
                 android:id="@+id/eventDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/description"
-                android:text="Decription"/>
-
+                android:layout_below="@id/description" />
 
         </RelativeLayout>
 
