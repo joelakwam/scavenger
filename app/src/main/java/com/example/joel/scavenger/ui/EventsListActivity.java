@@ -5,11 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.ProgressBar;
 
 import com.example.joel.scavenger.adapters.EventListAdapter;
 import com.example.joel.scavenger.models.Event;
@@ -25,10 +20,10 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-public class EventsActivity extends AppCompatActivity {
+public class EventsListActivity extends AppCompatActivity {
     @BindView(R.id.recyclerView) RecyclerView recyclerView;
     private EventListAdapter adapter;
-    private static final String TAG = EventsActivity.class.getSimpleName();
+    private static final String TAG = EventsListActivity.class.getSimpleName();
     public ArrayList<Event> events = new ArrayList<>();
 
     @Override
@@ -56,12 +51,12 @@ public class EventsActivity extends AppCompatActivity {
 
                 events = eventService.processResults(response);
 
-                EventsActivity.this.runOnUiThread(new Runnable() {
+                EventsListActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         adapter = new EventListAdapter(getApplicationContext(), events);
                         recyclerView.setAdapter(adapter);
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(EventsActivity.this);
+                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(EventsListActivity.this);
                         recyclerView.setLayoutManager(layoutManager);
                         recyclerView.setHasFixedSize(true);
                     }
