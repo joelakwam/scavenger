@@ -6,8 +6,22 @@
     tools:context=".ui.EventDetailFragment">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/eventImageView"
+            android:scaleType="centerCrop"/>
+        
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</RelativeLayout>-->
 
     </LinearLayout>
 
