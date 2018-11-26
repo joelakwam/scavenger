@@ -1,4 +1,6 @@
 package com.example.joel.scavenger.adapters;
 
-public class EventPagerAdapter {
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class EventPagerAdapter extends FragmentPagerAdapter {
 }
