@@ -35,18 +35,30 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:layout_marginTop="2dp"
                 android:id="@+id/websiteUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="url"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@id/eventNameTextView"/>
+                android:layout_below="@id/eventNameTextView"
+                android:textColor="@color/Blue"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/websiteUrl"
+                android:text="DESCRIPTION"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"/>
 
             <TextView
                 android:id="@+id/eventDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/websiteUrl"
+                android:layout_below="@id/description"
                 android:text="Decription"/>
 
 

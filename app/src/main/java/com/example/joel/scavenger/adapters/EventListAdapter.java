@@ -1,6 +1,7 @@
 package com.example.joel.scavenger.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,7 +12,10 @@ import android.widget.TextView;
 
 import com.example.joel.scavenger.R;
 import com.example.joel.scavenger.models.Event;
+import com.example.joel.scavenger.ui.EventDetailActivity;
 import com.squareup.picasso.Picasso;
+
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
@@ -58,6 +62,17 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
             super(itemView);
             ButterKnife.bind(this, itemView);
             context = itemView.getContext();
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int itemPosition = getLayoutPosition();
+                    Intent intent = new Intent(context, EventDetailActivity.class);
+                    intent.putExtra("position", itemPosition);
+                    intent.putExtra("events", Parcels.wrap(events));
+                    context.startActivity(intent);
+                }
+            });
         }
 
         public void bindEvent(Event event){
