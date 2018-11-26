@@ -30,7 +30,11 @@
                 android:value=".ui.MainActivity" />
         </activity>
         <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.EventDetailActivity"></activity>
+        <activity android:name=".ui.EventDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.EventsListActivity"/>
+        </activity>
     </application>
 
 </manifest>
