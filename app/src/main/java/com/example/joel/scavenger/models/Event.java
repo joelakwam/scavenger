@@ -1,5 +1,8 @@
 package com.example.joel.scavenger.models;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Event{
     private String name;
     private String description;
